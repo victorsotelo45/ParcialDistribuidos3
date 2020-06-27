@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8082/ServidorBiblioteca/ServicioBibliotecaImpl?wsdl" uri="xml-resources/web-service-references/ServicioBibliotecaImpl/wsdl/localhost_8082/ServidorBiblioteca/ServicioBibliotecaImpl.wsdl"/>
+    <system systemId="http://localhost:8082/ServidorBiblioteca/ServicioBibliotecaImpl?xsd=1" uri="xml-resources/web-service-references/ServicioBibliotecaImpl/wsdl/localhost_8082/ServidorBiblioteca/ServicioBibliotecaImpl.xsd_1.xsd"/>
+    <system systemId="http://localhost:8082/servidorRecursosHumanos/ServicioRecursosHumanosImpl?wsdl" uri="xml-resources/web-service-references/ServicioRecursosHumanosImpl/wsdl/localhost_8082/servidorRecursosHumanos/ServicioRecursosHumanosImpl.wsdl"/>
+    <system systemId="http://localhost:8082/servidorRecursosHumanos/ServicioRecursosHumanosImpl?xsd=1" uri="xml-resources/web-service-references/ServicioRecursosHumanosImpl/wsdl/localhost_8082/servidorRecursosHumanos/ServicioRecursosHumanosImpl.xsd_1.xsd"/>
+    <system systemId="http://localhost:8082/servidorSimca/ServicioSimcaImpl?wsdl" uri="xml-resources/web-service-references/ServicioSimcaImpl/wsdl/localhost_8082/servidorSimca/ServicioSimcaImpl.wsdl"/>
+    <system systemId="http://localhost:8082/servidorSimca/ServicioSimcaImpl?xsd=1" uri="xml-resources/web-service-references/ServicioSimcaImpl/wsdl/localhost_8082/servidorSimca/ServicioSimcaImpl.xsd_1.xsd"/>
+</catalog>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-ServicioSimcaImpl" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ServicioSimcaImpl"/>
+        <property name="wsdl-ServicioSimcaImpl" location="xml-resources/web-service-references/ServicioSimcaImpl/wsdl/localhost_8082/servidorSimca/ServicioSimcaImpl.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ServicioSimcaImpl" destdir="${build.generated.dir}/jax-wsCache/ServicioSimcaImpl" wsdl="${wsdl-ServicioSimcaImpl}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8082/servidorSimca/ServicioSimcaImpl?wsdl" xnocompile="true" xendorsed="true" package="servicios.Simca">
+            <depends file="${wsdl-ServicioSimcaImpl}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ServicioSimcaImpl"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ServicioSimcaImpl">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ServicioSimcaImpl" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ServicioSimcaImpl"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios/Simca"/>
+    </target>
+    <target name="wsimport-client-ServicioRecursosHumanosImpl" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ServicioRecursosHumanosImpl"/>
+        <property name="wsdl-ServicioRecursosHumanosImpl" location="xml-resources/web-service-references/ServicioRecursosHumanosImpl/wsdl/localhost_8082/servidorRecursosHumanos/ServicioRecursosHumanosImpl.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ServicioRecursosHumanosImpl" destdir="${build.generated.dir}/jax-wsCache/ServicioRecursosHumanosImpl" wsdl="${wsdl-ServicioRecursosHumanosImpl}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8082/servidorRecursosHumanos/ServicioRecursosHumanosImpl?wsdl" xnocompile="true" xendorsed="true" package="servicios.recursosHumanos">
+            <depends file="${wsdl-ServicioRecursosHumanosImpl}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ServicioRecursosHumanosImpl"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ServicioRecursosHumanosImpl">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ServicioRecursosHumanosImpl" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ServicioRecursosHumanosImpl"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios/recursosHumanos"/>
+    </target>
+    <target name="wsimport-client-ServicioBibliotecaImpl" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ServicioBibliotecaImpl"/>
+        <property name="wsdl-ServicioBibliotecaImpl" location="xml-resources/web-service-references/ServicioBibliotecaImpl/wsdl/localhost_8082/ServidorBiblioteca/ServicioBibliotecaImpl.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ServicioBibliotecaImpl" destdir="${build.generated.dir}/jax-wsCache/ServicioBibliotecaImpl" wsdl="${wsdl-ServicioBibliotecaImpl}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8082/ServidorBiblioteca/ServicioBibliotecaImpl?wsdl" xnocompile="true" xendorsed="true" package="servicios.biblioteca">
+            <depends file="${wsdl-ServicioBibliotecaImpl}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ServicioBibliotecaImpl"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ServicioBibliotecaImpl">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ServicioBibliotecaImpl" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ServicioBibliotecaImpl"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios/biblioteca"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-ServicioSimcaImpl, wsimport-client-ServicioRecursosHumanosImpl, wsimport-client-ServicioBibliotecaImpl"/>
+</project>
